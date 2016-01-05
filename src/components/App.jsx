@@ -13,7 +13,7 @@ class App extends React.Component {
     }
     
     render() {
-        var messageNodes = this.state.messages.map((message, i)=> {
+        var messageNodes = this.state.messages.map((message, i) => {
             return (
                 <div key={i}>{message}</div>
             );         
