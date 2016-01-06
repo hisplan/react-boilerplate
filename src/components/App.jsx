@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class App extends React.Component {
+class App extends Component {
     
     constructor() {
         super();
         this.state = {
           messages: [
-              'Hello, World!',
-              'Hello, Earth!'
+              '1234',
+              '5678'
           ]  
         };
     }
@@ -15,7 +15,7 @@ class App extends React.Component {
     render() {
         var messageNodes = this.state.messages.map((message, i) => {
             return (
-                <div key={i}>{message}</div>
+                <div style={{color: 'blue'}} key={i}>{message}</div>
             );         
         });
         
